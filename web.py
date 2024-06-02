@@ -13,6 +13,8 @@
 
 # Para colocar um Url publico, devo criar um projeto só com os ficheiros que perciso, ou seja, web.py, to.do.txt,
 # to.do_done.txt e funtions.py!!!
+# Dps colocar no git repository and then escrever again no terminal: streamlit run web.py
+# Dps carregar na opção deploy
 
 import streamlit as st
 from functions import get_and_write_todos
