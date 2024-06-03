@@ -27,8 +27,8 @@ def add_todo():
     get_and_write_todos(item=novo_todo)
 
 
-if not path.exists('todo_done.txt'):
-    with open('todo_done.txt', 'w') as output_file:
+if not path.exists('pages/todo_done.txt'):
+    with open('pages/todo_done.txt', 'w') as output_file:
         pass
 
 if not path.exists('todo.txt'):
@@ -36,7 +36,9 @@ if not path.exists('todo.txt'):
         pass
 
 todos = get_and_write_todos()
-todos_complete = get_and_write_todos(filepath='todo_done.txt')
+todos_complete = get_and_write_todos(filepath='pages/todo_done.txt')
+
+st.set_page_config(layout='wide')  # Dá para usar no telemóvel
 
 st.title('My todo App')
 st.subheader('')
@@ -49,7 +51,7 @@ for index, todo in enumerate(todos):
         get_and_write_todos(remove_item=todo)
         del todos[index]
         del st.session_state[todo]
-        get_and_write_todos(filepath='todo_done.txt', item=todo)
+        get_and_write_todos(filepath='pages/todo_done.txt', item=todo)
         todos_complete.append(todo)
         st.rerun()
 
