@@ -6,6 +6,9 @@
 # nenhum código HTML, CSS ou JavaScript. O Streamlit fornece uma série de widgets e funções que permitem criar
 # interfaces de usuário atraentes e fáceis de usar.
 
+# O problema do Streamlit é que se o meu site começar a ter muitos visitors, o streamlit não vai dar conta, devido ao
+# CPU,etc. Portanto, se quero criar um app para exportá-la, tenho que usar Heroku!!!!!
+
 # Nota: para executar o código, não pode ser aqui e sim no terminal e tenho que escrever:
 # streamlit run web.py
 # Ctrl + C acaba o programa e dps tenho que criar um requirements txt file, ou seja, dps tenho que escvever no terminal:
@@ -54,8 +57,5 @@ for index, todo in enumerate(todos):
         get_and_write_todos(filepath='pages/todo_done.txt', item=todo)
         todos_complete.append(todo)
         st.rerun()
-
-# for index, to-do in enumerate(todos_complete):
-#     checkbox = st.checkbox(to-do, key=to-do)
 
 st.text_input(label='', placeholder='Add a new todo', on_change=add_todo, key='new_todo')
