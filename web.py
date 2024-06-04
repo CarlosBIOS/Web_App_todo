@@ -6,8 +6,9 @@
 # nenhum código HTML, CSS ou JavaScript. O Streamlit fornece uma série de widgets e funções que permitem criar
 # interfaces de usuário atraentes e fáceis de usar.
 
-# O problema do Streamlit é que se o meu site começar a ter muitos visitors, o streamlit não vai dar conta, devido ao
-# CPU,etc. Portanto, se quero criar um app para exportá-la, tenho que usar Heroku!!!!!
+# Existe muitps problemas em relação ao Streamlit, e um deles é que se o meu sítio web começar a ter muitos visitors, o
+# streamlit não vai dar conta, devido ao CPU, etc. Portanto, se quero criar um app para exportá-la, tenho que usar
+# Heroku!!!!!
 
 # Nota: para executar o código, não pode ser aqui e sim no terminal e tenho que escrever:
 # streamlit run web.py
